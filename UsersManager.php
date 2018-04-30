@@ -3,12 +3,12 @@
  * Plugin Name: UsersManager
  * Plugin URI:  https://wordpress.org/plugins/usersmanager
  * Description: UsersManager ti consente di creare e gestire pagamenti ricorrenti
- * Version:     1.0.0
- * Author:      Stackhouse
- * Author URI:  https://www.stackhouse.it
+ * Version:     1.0.1
+ * Author:      UsersManager
+ * Author URI:  https://www.usersmanager.com
  * Text Domain: UsersManager
  * License:     GPL-2.0+
- * License URI: http://www.usersmanager.com/terms
+ * License URI: https://www.usersmanager.com/privacy
  */
 
 $env_um = 'www';
