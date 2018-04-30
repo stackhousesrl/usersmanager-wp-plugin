@@ -1,5 +1,6 @@
 === UsersManager ===
 Contributors: Stackhouse
+Tags: subscription, membership, recurring, ecommerce
 Requires at least: 4.6
 Tested up to: 4.9.5
 Stable tag: 4.7
@@ -30,6 +31,8 @@ If you need to use a single page of your account you must insert id property:
 
 Example: [usersmanager id="_Ie14kfsf1kfFas"]
 (All single ids can be found in your usersmanager account)
+
+Example: [usersmanager tags="services"]
 
 
 == Installation ==
