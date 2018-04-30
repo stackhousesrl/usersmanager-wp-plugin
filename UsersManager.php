@@ -140,14 +140,14 @@ function usrmng_shortcode( $atts, $content = null ) {
     $bgcolor = substr(get_option( 'usrmng_color' ), 1);
     if (is_array($atts) && isset($atts['id'])) $id = $atts['id'];
     if (is_array($atts) && isset($atts['env'])) $env = $atts['env'];
-    if (is_array($atts) && isset($atts['page'])) $url = $atts['page'];
+    if (is_array($atts) && isset($atts['page'])) $page = $atts['page'];
     if (is_array($atts) && isset($atts['tags'])) $tags = $atts['tags'];
     if (is_array($atts) && isset($atts['layout'])) $layout = $atts['layout'];
     if (is_array($atts) && isset($atts['bgcard'])) $bgcard = $atts['bgcard'];
     if (is_array($atts) && isset($atts['bgcolor'])) $bgcolor = $atts['bgcolor'];
     echo <<<EOF
-    <iframe id="myIframeUsersManager-$page" class="iframeusersmanager" src="https://$env_um.usersmanager.com/widget?page=$url&bgcolor=$bgcolor&id=$id&tags=$tags&layout=$layout" scrolling="no" frameBorder="0"></iframe>
-    <script>usrmngResize("$url");</script>
+    <iframe id="myIframeUsersManager-$page" class="iframeusersmanager" src="https://$env_um.usersmanager.com/widget?page=$page&bgcolor=$bgcolor&id=$id&tags=$tags&layout=$layout" scrolling="no" frameBorder="0"></iframe>
+    <script>usrmngResize("$page");</script>
 EOF;
     return ob_get_clean();
 }
